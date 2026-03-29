@@ -49,3 +49,7 @@ def test_calculator_multiply_zero():
 
 def test_calculator_float_division():
     assert simple_calculator("divide", 5, 2) == 2.5
+
+def test_calculator_float_substract():
+    assert simple_calculator("substract", 17, -3) == -20
+    
