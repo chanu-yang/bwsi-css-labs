@@ -39,3 +39,13 @@ def test_invalid_operation():
 
 if __name__ == "__main__":
     pytest.main()
+
+   
+def test_calculator_negative_numbers():
+    assert simple_calculator("add", -1, -5) == -6
+
+def test_calculator_multiply_zero():
+    assert simple_calculator("multiply", 10, 0) == 0
+
+def test_calculator_float_division():
+    assert simple_calculator("divide", 5, 2) == 2.5
